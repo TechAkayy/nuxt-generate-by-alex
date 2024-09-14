@@ -1,10 +1,13 @@
 <script setup lang="ts">
   const route = useRoute()
   const count = ref(0)
+
   const {data} = await useFetch('/api/data')
   prerenderRoutes('/api/data')
-
   const {products, date} = data.value
+
+  const {data: jobs, error} = await useFetch('https://api.nuxt.com/jobs')
+  prerenderRoutes('https://api.nuxt.com/jobs')
 </script>
 
 <template>
@@ -15,6 +18,8 @@
       Server date: {{ date }}
       <br />
       Product Count: {{ products.length }}
+      <br />
+      Jobs Count: {{ jobs.length }}
     </h1>
 
     <button class="bg-gray-200 p-2 rounded-lg" id="count" @click="count++">
