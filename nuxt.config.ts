@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   experimental: {
     /* Don't disable this, otherwise nuxt generate using prerenderRoutes will break when using multiple pages */
-    payloadExtraction: false,
+    // payloadExtraction: false,
   },
 
   // routeRules: {
