@@ -7,7 +7,7 @@
   const {products, date} = data.value
 
   const {data: jobs, error} = await useFetch('https://api.nuxt.com/jobs')
-  prerenderRoutes('https://api.nuxt.com/jobs')
+  // prerenderRoutes('https://api.nuxt.com/jobs')
 </script>
 
 <template>
