@@ -1,6 +1,5 @@
 <script setup lang="ts">
   const route = useRoute()
-
   if (route.path === '/no-js') {
     useServerHead({
       script: [
@@ -20,8 +19,13 @@
 <template>
   <div>
     <v-app class="pa-10">
-      <v-main class="py-4">
-        <AlexCard>
+      <AlexCard>
+        <template #title>
+          <h1>Outside v-main, works fine!</h1>
+        </template>
+      </AlexCard>
+      <v-main class="py-4 mt-8">
+        <AlexCard class="mt-8">
           <template #title>
             <h1>Inside v-main, doesn't work, check app.vue!</h1>
           </template>

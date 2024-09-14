@@ -16,9 +16,12 @@
       Product Count: {{ products.length }}
     </h2>
 
-    <v-btn class="bg-gray-200 p-2 rounded-lg" id="count" @click="count++">
+    <button
+      class="bg-gray-200 pa-2 rounded-lg border-solid"
+      id="count"
+      @click="count++">
       Count: {{ count }}
-    </v-btn>
+    </button>
 
     <ClientOnly>
       <h2 class="mt-4">Client Only Info</h2>
