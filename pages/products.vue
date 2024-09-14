@@ -3,7 +3,7 @@
   const count = ref(0)
 
   const {data} = await useFetch('/api/data')
-  prerenderRoutes('/api/data')
+  // prerenderRoutes('/api/data')
   const {products, date} = data.value
 
   const {data: jobs, error} = await useFetch('https://api.nuxt.com/jobs')
