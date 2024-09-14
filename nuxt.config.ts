@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // experimental: {
-  /* Don't disable this, otherwise nuxt generate using prerenderRoutes will break when using multiple pages */
+  /* Don't disable this, otherwise nuxt generate using prerenderRoutes will break when using multiple pages, check pages branch of this repo */
   //   payloadExtraction: false,
   // },
 
