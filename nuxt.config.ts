@@ -5,33 +5,33 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
 
-  routeRules: {
-    'no-js': {
-      experimentalNoScripts: true,
-    },
-    '/spa': {
-      ssr: false,
-    },
-    ten: {
-      cache: {
-        maxAge: 10,
-        swr: false,
-      },
-    },
-    'ten-swr': {
-      cache: {
-        maxAge: 10,
-        staleMaxAge: 60,
-        swr: true,
-      },
-    },
-    '/static-route': {
-      static: true,
-    },
-    '/abc-prerender': {
-      prerender: true,
-    },
-  },
+  // routeRules: {
+  //   'no-js': {
+  //     experimentalNoScripts: true,
+  //   },
+  //   '/spa': {
+  //     ssr: false,
+  //   },
+  //   ten: {
+  //     cache: {
+  //       maxAge: 10,
+  //       swr: false,
+  //     },
+  //   },
+  //   'ten-swr': {
+  //     cache: {
+  //       maxAge: 10,
+  //       staleMaxAge: 60,
+  //       swr: true,
+  //     },
+  //   },
+  //   '/static-route': {
+  //     static: true,
+  //   },
+  //   '/abc-prerender': {
+  //     prerender: true,
+  //   },
+  // },
 
   nitro: {
     // /* We added the below directly in app.vue using prerenderRoutes macro  */
